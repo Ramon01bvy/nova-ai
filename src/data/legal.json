@@ -1,0 +1,206 @@
+{
+  "privacy": {
+    "title": "Privacybeleid",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Laatst bijgewerkt: januari 2026. Dit is een demonstratietekst voor de NovaAI-landingspagina."
+      },
+      {
+        "type": "h3",
+        "text": "Welke gegevens we verwerken"
+      },
+      {
+        "type": "p",
+        "text": "We verwerken alleen gegevens die je zelf verstrekt via formulieren op deze site: naam, zakelijk e-mailadres, bedrijfsnaam en eventueel een bericht. Daarnaast meten we geanonimiseerde bezoekstatistieken."
+      },
+      {
+        "type": "h3",
+        "text": "Waarom we dat doen"
+      },
+      {
+        "type": "li",
+        "text": "Om je aanvraag of demo te behandelen (gerechtvaardigd belang)"
+      },
+      {
+        "type": "li",
+        "text": "Om je account te leveren waarvoor je je aanmeldt (uitvoering overeenkomst)"
+      },
+      {
+        "type": "li",
+        "text": "Om de site technisch te laten werken (noodzakelijke cookies)"
+      },
+      {
+        "type": "h3",
+        "text": "Waar gegevens staan"
+      },
+      {
+        "type": "p",
+        "text": "Standaard in EU-datacenters (Frankfurt, Ierland). Klantdata wordt versleuteld met AES-256 in rust en TLS 1.3 tijdens transport. We verkopen nooit gegevens aan derden."
+      },
+      {
+        "type": "h3",
+        "text": "Bewaartermijnen"
+      },
+      {
+        "type": "p",
+        "text": "Formulieraanvragen bewaren we maximaal 12 maanden. Accountgegevens bewaren we zolang je account actief is, plus 30 dagen daarna."
+      },
+      {
+        "type": "h3",
+        "text": "Jouw rechten"
+      },
+      {
+        "type": "p",
+        "text": "Je hebt recht op inzage, correctie, verwijdering, beperking en dataportabiliteit. Mail hiervoor hallo@nova.ai. Je kunt ook klagen bij de Autoriteit Persoonsgegevens."
+      }
+    ]
+  },
+  "terms": {
+    "title": "Algemene voorwaarden",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Laatst bijgewerkt: januari 2026. Dit is een demonstratietekst voor de NovaAI-landingspagina."
+      },
+      {
+        "type": "h3",
+        "text": "1. Toepassing"
+      },
+      {
+        "type": "p",
+        "text": "Deze voorwaarden gelden voor het gebruik van het NovaAI-platform en deze website. Door een account aan te maken accepteer je deze voorwaarden."
+      },
+      {
+        "type": "h3",
+        "text": "2. Proefperiode"
+      },
+      {
+        "type": "p",
+        "text": "Nieuwe accounts krijgen 14 dagen gratis toegang tot het Pro-plan. Er is geen creditcard nodig. Na afloop kies je zelf een plan of gaat het account terug naar het Gratis-plan."
+      },
+      {
+        "type": "h3",
+        "text": "3. Gebruik van de dienst"
+      },
+      {
+        "type": "p",
+        "text": "Je bent verantwoordelijk voor de inhoud en rechtmatigheid van de data die je verwerkt, en voor het beheer van je gebruikersaccounts. Misbruik, reverse engineering en het versturen van spam zijn niet toegestaan."
+      },
+      {
+        "type": "h3",
+        "text": "4. Beschikbaarheid"
+      },
+      {
+        "type": "p",
+        "text": "We streven naar 99,9% maandelijkse beschikbaarheid voor betaalde plannen. Gepland onderhoud kondigen we minimaal 48 uur vooraf aan."
+      },
+      {
+        "type": "h3",
+        "text": "5. Betaling en opzegging"
+      },
+      {
+        "type": "p",
+        "text": "Abonnementen worden maandelijks of jaarlijks vooraf gefactureerd en zijn op elk moment opzegbaar. Bij jaarbetaling geldt een restitutie naar rato binnen 30 dagen."
+      },
+      {
+        "type": "h3",
+        "text": "6. Aansprakelijkheid"
+      },
+      {
+        "type": "p",
+        "text": "De dienst wordt geleverd “as is”. Aansprakelijkheid is beperkt tot het bedrag dat je in de twaalf maanden voorafgaand aan de gebeurtenis hebt betaald."
+      }
+    ]
+  },
+  "accessibility": {
+    "title": "Toegankelijkheidsverklaring",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "We willen dat NovaAI bruikbaar is voor iedereen, ongeacht apparaat of beperking."
+      },
+      {
+        "type": "h3",
+        "text": "Waar we aan werken"
+      },
+      {
+        "type": "li",
+        "text": "Semantische HTML en duidelijke koppenstructuur"
+      },
+      {
+        "type": "li",
+        "text": "Volledige bediening met toetsenbord, inclusief zichtbare focus"
+      },
+      {
+        "type": "li",
+        "text": "Contrast van minimaal 4,5:1 voor lopende tekst"
+      },
+      {
+        "type": "li",
+        "text": "Respect voor prefers-reduced-motion"
+      },
+      {
+        "type": "li",
+        "text": "Formulieren met labels, foutmeldingen en aria-attributen"
+      },
+      {
+        "type": "h3",
+        "text": "Bekende beperkingen"
+      },
+      {
+        "type": "p",
+        "text": "Enkele decoratieve grafieken in het dashboard zijn niet voorgelezen door schermlezers; dezelfde informatie staat als tekst beschikbaar."
+      },
+      {
+        "type": "h3",
+        "text": "Melding doen"
+      },
+      {
+        "type": "p",
+        "text": "Loop je tegen een drempel aan? Mail hallo@nova.ai en we reageren binnen vijf werkdagen."
+      }
+    ]
+  },
+  "refund": {
+    "title": "Restitutiebeleid",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "We willen dat je tevreden bent. Daarom gelden deze eenvoudige regels."
+      },
+      {
+        "type": "h3",
+        "text": "14 dagen bedenktijd"
+      },
+      {
+        "type": "p",
+        "text": "Was je niet tevreden? Meld je binnen 14 dagen na je eerste betaling aan en we storten het volledige bedrag terug."
+      },
+      {
+        "type": "h3",
+        "text": "Jaarabonnementen"
+      },
+      {
+        "type": "p",
+        "text": "Bij een jaarabonnement kun je binnen 30 dagen restitutie naar rato aanvragen voor de resterende maanden."
+      },
+      {
+        "type": "h3",
+        "text": "Maandabonnementen"
+      },
+      {
+        "type": "p",
+        "text": "Maandabonnementen kun je op elk moment opzeggen. De lopende maand wordt niet terugbetaald; je houdt toegang tot het einde van die periode."
+      },
+      {
+        "type": "h3",
+        "text": "Aanvragen"
+      },
+      {
+        "type": "p",
+        "text": "Mail hallo@nova.ai met je factuurnummer. We verwerken restituties binnen 10 werkdagen via de oorspronkelijke betaalmethode."
+      }
+    ]
+  }
+}
