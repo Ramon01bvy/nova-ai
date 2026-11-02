@@ -9,10 +9,7 @@ export default {
   ],
   theme: {
   	extend: {
-      fontFamily: { heading: ['var(--font-heading)'], body: ['var(--font-body)'] },
   		colors: {
-        violet: 'hsl(var(--violet))',
-        'electric-blue': 'hsl(var(--electric-blue))',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -70,13 +67,6 @@ export default {
   			sm: 'calc(var(--radius) - 4px)'
   		},
   		keyframes: {
-  		    'organic-gradient': {
-  		      '0%,100%': { backgroundPosition: '0% 50%' },
-  		      '25%': { backgroundPosition: '100% 0%' },
-  		      '50%': { backgroundPosition: '100% 100%' },
-  		      '75%': { backgroundPosition: '0% 100%' },
-  		    },
-  		    'border-shimmer': { from: { strokeDashoffset: '660' }, to: { strokeDashoffset: '0' } },
   			'accordion-down': {
   				from: {
   					height: '0'
@@ -95,8 +85,6 @@ export default {
   			}
   		},
   		animation: {
-  		    'organic-gradient': 'organic-gradient 14s ease-in-out infinite',
-  		    'border-shimmer': 'border-shimmer 5s linear infinite',
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out'
   		}
