@@ -1,46 +1,73 @@
-# AI Rules
+# AI Development Rules
 
-## Project purpose
+This document outlines the technology stack and specific library usage guidelines for this Next.js application. Adhering to these rules will help maintain consistency, improve collaboration, and ensure the AI assistant can effectively understand and modify the codebase.
 
-This repository is a free, MIT-licensed personal portfolio and CV template. Keep it easy to customize, accessible, and deployable as a standard Next.js application.
+## Tech Stack Overview
 
-## Stack
+The application is built using the following core technologies:
 
-- Next.js 15 App Router
-- React 19
-- TypeScript in strict mode
-- Tailwind CSS 3
-- Node.js 18 or newer
+*   **Framework**: Next.js (App Router)
+*   **Language**: TypeScript
+*   **UI Components**: Shadcn/UI - A collection of re-usable UI components built with Radix UI and Tailwind CSS.
+*   **Styling**: Tailwind CSS - A utility-first CSS framework for rapid UI development.
+*   **Icons**: Lucide React - A comprehensive library of simply beautiful SVG icons.
+*   **Forms**: React Hook Form for managing form state and validation, typically with Zod for schema validation.
+*   **State Management**: Primarily React Context API and built-in React hooks (`useState`, `useReducer`).
+*   **Notifications/Toasts**: Sonner for displaying non-intrusive notifications.
+*   **Charts**: Recharts for data visualization.
+*   **Animation**: `tailwindcss-animate` and animation capabilities built into Radix UI components.
 
-Do not replace these core technologies unless the user explicitly asks for a migration.
+## Library Usage Guidelines
 
-## Architecture
+To ensure consistency and leverage the chosen stack effectively, please follow these rules:
 
-- Routes and layouts live in `src/app`.
-- Reusable UI lives in `src/components`.
-- Portfolio content and identity data live in `src/data/config.ts`.
-- Prefer changing `src/data/config.ts` for names, biography, skills, experience, education, projects, posts, contact details, and social links.
-- Keep page components focused on presentation and reuse the typed data shapes already defined by the project.
+1.  **UI Components**:
+    *   **Primary Choice**: Always prioritize using components from the `src/components/ui/` directory (Shadcn/UI components).
+    *   **Custom Components**: If a required component is not available in Shadcn/UI, create a new component in `src/components/` following Shadcn/UI's composition patterns (i.e., building on Radix UI primitives and styled with Tailwind CSS).
+    *   **Avoid**: Introducing new, third-party UI component libraries without discussion.
 
-## Editing guidelines
+2.  **Styling**:
+    *   **Primary Choice**: Exclusively use Tailwind CSS utility classes for all styling.
+    *   **Global Styles**: Reserve `src/app/globals.css` for base Tailwind directives, global CSS variable definitions, and minimal base styling. Avoid adding component-specific styles here.
+    *   **CSS-in-JS**: Do not use CSS-in-JS libraries (e.g., Styled Components, Emotion).
 
-- Preserve the multi-page structure: home, about, portfolio, blog, and contact.
-- Keep components typed; do not introduce `any`.
-- Use semantic HTML and preserve keyboard navigation, visible focus states, and WCAG AA color contrast.
-- Keep layouts responsive from small mobile screens through desktop widths.
-- Use existing Tailwind utilities and visual patterns before adding new dependencies or custom CSS.
-- Do not add a database, authentication, analytics, CMS, or paid service unless the user explicitly requests it.
-- Treat the contact form as a scaffold. Never claim messages are delivered until a real provider is configured and tested.
-- Keep demo names, work history, testimonials, metrics, and contact details clearly fictional until the user supplies verified replacements.
-- Use `next/image` and `next/font` when adding production assets or fonts.
+3.  **Icons**:
+    *   **Primary Choice**: Use icons from the `lucide-react` library.
 
-## Validation
+4.  **Forms**:
+    *   **Management**: Use `react-hook-form` for all form logic (state, validation, submission).
+    *   **Validation**: Use `zod` for schema-based validation with `react-hook-form` via `@hookform/resolvers`.
 
-Before considering a change complete, run the available project checks and at minimum verify:
+5.  **State Management**:
+    *   **Local State**: Use React's `useState` and `useReducer` hooks for component-level state.
+    *   **Shared/Global State**: For state shared between multiple components, prefer React Context API.
+    *   **Complex Global State**: If application state becomes significantly complex, discuss the potential introduction of a dedicated state management library (e.g., Zustand, Jotai) before implementing.
 
-```bash
-npm install
-npm run build
-```
+6.  **Routing**:
+    *   Utilize the Next.js App Router (file-system based routing in the `src/app/` directory).
 
-Also inspect the affected pages at mobile and desktop widths. Confirm that all internal links, project routes, and form validation still work.
+7.  **API Calls & Data Fetching**:
+    *   **Client-Side**: Use the native `fetch` API or a simple wrapper around it.
+    *   **Server-Side (Next.js)**: Leverage Next.js Route Handlers (in `src/app/api/`) or Server Actions for server-side logic and data fetching.
+
+8.  **Animations**:
+    *   Use `tailwindcss-animate` plugin and the animation utilities provided by Radix UI components.
+
+9.  **Notifications/Toasts**:
+    *   Use the `Sonner` component (from `src/components/ui/sonner.tsx`) for all toast notifications.
+
+10. **Charts & Data Visualization**:
+    *   Use `recharts` and its associated components (e.g., `src/components/ui/chart.tsx`) for displaying charts.
+
+11. **Utility Functions**:
+    *   General-purpose helper functions should be placed in `src/lib/utils.ts`.
+    *   Ensure functions are well-typed and serve a clear, reusable purpose.
+
+12. **Custom Hooks**:
+    *   Custom React hooks should be placed in the `src/hooks/` directory (e.g., `src/hooks/use-mobile.tsx`).
+
+13. **TypeScript**:
+    *   Write all new code in TypeScript.
+    *   Strive for strong typing and leverage TypeScript's features to improve code quality and maintainability. Avoid using `any` where possible.
+
+By following these guidelines, we can build a more robust, maintainable, and consistent application.
